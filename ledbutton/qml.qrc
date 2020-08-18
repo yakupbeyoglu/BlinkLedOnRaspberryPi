@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>led.qml</file>
+        <file>images/on.png</file>
+        <file>images/off.png</file>
+    </qresource>
+</RCC>
