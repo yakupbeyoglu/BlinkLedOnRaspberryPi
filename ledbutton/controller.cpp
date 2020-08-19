@@ -22,9 +22,10 @@ controller::controller(QObject *parent)
        pinMode(2,INPUT);
        ///pin 24 for led
        pinMode(24,OUTPUT);
-       pinMode(1,PWM_OUTPUT);
+       pinMode(18,PWM_OUTPUT);
         pwmSetMode(PWM_MODE_MS);
         pwmWrite (18, pwm);
+        pwmSetRange (100);
      QTimer *timer = new QTimer(this);
      QObject::connect(timer,SIGNAL(timeout()),this,SLOT(statusofbutton()));
      timer->start(150);

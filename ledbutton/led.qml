@@ -24,7 +24,6 @@ property int s : 0
         }
         function opacity(){
                 pwmbulb.opacity = (pwmbulb.opacity ==0 ? 0.1 : pwmbulb.opacity*2);
-                console.log(test.pwm);
         }
 
         Text{
