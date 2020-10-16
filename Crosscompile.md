@@ -33,7 +33,7 @@
  sudo chown 1000:1000 opt/qt5pi
  cd opt/qt5pi
  git clone https://github.com/raspberrypi/tools 
- nano ~/.bashrc 
+ # nano ~/.bashrc 
  # add below line in the last part : 
  export PATH=$PATH:/opt/qt5pi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin 
 ## above will give export path
