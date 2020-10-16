@@ -17,7 +17,8 @@
  sudo apt-get build-dep qt5-qmake 
  sudo apt-get build-dep libqt5webengine-data
  sudo apt-get install libudev-dev libinput-dev libts-dev libxcb-xinerama0-dev libxcb-xinerama0 
- mkdir /usr/local/qt5pi ## create directiory of qt5pi
+ # create directiory of qt5pi
+ mkdir /usr/local/qt5pi 
  chown -R root:root /usr/local/qt5pi 
 
 ## in Linux side ( Host ) ?
