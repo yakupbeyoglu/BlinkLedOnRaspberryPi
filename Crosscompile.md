@@ -1,6 +1,6 @@
 ﻿Raspberry side (Client) : 
 
-##first connect raspberry with ssh then; 
+## first connect raspberry with ssh then; 
   ## sudo nano etcssh/ssh_config 
   sudo nano /etc/ssh/sshd_config
 find the line PermitRootLogin and make it comment out.  And cange front of to root login with
@@ -28,7 +28,7 @@ sudo chown 1000:1000 opt/qt5pi
 cd opt/qt5pi
 git clone https://github.com/raspberrypi/tools 
 nano ~/.bashrc ## add below line in the last part : 
-export PATH=$PATH:/opt/qt5pi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin    ## it will givve export path 
+export PATH=$PATH:/opt/qt5pi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin    ## it will give export path 
 ## you can use reboot or re run bashrc file I am going to use re run 
 . ~/.bashrc
 
@@ -118,15 +118,15 @@ rsync -avz sysroot/usr/local/qt5pi root@10.80.1.217:/usr/local
  /opt/qt5pi/sysroot/usr/local/qt5pi/bin/qmake 
 ## you will see make file
 make
-##send your file to raspberry with ssh
+## send your file to raspberry with ssh
 scp filename root@your_raspberry_pi_ip_address : ##here directroy if you give like that it will copy to home
 
 run with ./project name in your rasp
 
-##if you want to use qt creator as cross compiler when press to run button follow below lines
+## if you want to use qt creator as cross compiler when press to run button follow below lines
 ## first go tools/options/ devices
 ## press Add and enter information dont forget username should be root !
-##then enter kits>debuggers add  path : /opt/qt5pi/tools/arm-bcm2708/arm-rpi-4.9.3-linux-gnueabihf/bin/arm-linux-gnueabihf-gdb
+## then enter kits>debuggers add  path : /opt/qt5pi/tools/arm-bcm2708/arm-rpi-4.9.3-linux-gnueabihf/bin/arm-linux-gnueabihf-gdb
 ## Add c & c++ compilers 
  path: /opt/qt5pi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-g++
  path: /opt/qt5pi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc
@@ -137,11 +137,11 @@ path : /opt/qt5pi/sysroot/usr/local/qt5pi/bin/qmake
 name : Raspberry pi 3
 device type : Generic Linux Device
 Device : Device name which did you write on device step
-##system root file of your raspberry directory
+## system root file of your raspberry directory
 sysRoot : /opt/qt5pi/sysroot 
-##select your compilers which did you add above !
-##select added debugger and qt version !
-##END!
+## select your compilers which did you add above !
+## select added debugger and qt version !
+## END!
  
 
 
