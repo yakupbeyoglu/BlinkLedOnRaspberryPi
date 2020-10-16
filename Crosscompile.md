@@ -5,7 +5,7 @@
   sudo nano /etc/ssh/sshd_config
 find the line PermitRootLogin and make it comment out.  And cange front of to root login with
 yes. 
-#give new pass
+# give new pass
 Sudo passwd root
 sudo reboot
 nano etcapt/sources.list   ## uncomment last line which is about the apt-get update 
